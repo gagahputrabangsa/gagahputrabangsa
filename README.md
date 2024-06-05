@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Gagah Putra Bangsa</h1>
-<iframe src="https://giphy.com/embed/oHsKFiT28Id0I" width="480" height="259" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/studio-ghibli-oHsKFiT28Id0I">via GIPHY</a></p>
+<img align:"right" alt:"ghibli width:"400" src="https://giphy.com/gifs/studio-ghibli-oHsKFiT28Id0I">
 
 <h3 align="center">Wellcome to my Repositories</h3>
 
