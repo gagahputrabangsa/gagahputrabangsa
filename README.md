@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Gagah Putra Bangsa</h1>
-<img align:"right" alt:"ghibli width:"400" src="https://giphy.com/gifs/studio-ghibli-oHsKFiT28Id0I">
+<img align:"right" alt:"ghibli width:"400" src="https://studioghibli.jp/static/media/cat-gif.3cd2ba79.gif">
 
 <h3 align="center">Wellcome to my Repositories</h3>
 
