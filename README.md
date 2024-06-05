@@ -1,5 +1,6 @@
 <h1 align="center">Hi 👋, I'm Gagah Putra Bangsa</h1>
-<img align:"left" alt:"ghibli width:"320px" length :"640px" src="https://studioghibli.jp/static/media/cat-gif.3cd2ba79.gif">
+<img style="width: 320px; height: 640px;" align="left" alt="ghibli" src="https://studioghibli.jp/static/media/cat-gif.3cd2ba79.gif">
+
 
 
 <h3 align="left">Languages and Tools:</h3>
