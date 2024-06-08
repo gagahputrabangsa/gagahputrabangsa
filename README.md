@@ -40,3 +40,8 @@
 <!-- <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40" style="margin: 10px;"/>
 </a> -->
+
+<h3 align="left">Portfolio:</h3>
+<a href="https://gagaputra-portfolio.vercel.app/" target="_blank" rel="noreferrer">
+    https://gagaputra-portfolio.vercel.app/
+</a>
