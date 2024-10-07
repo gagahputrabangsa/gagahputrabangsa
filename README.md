@@ -2,7 +2,7 @@
 <img style="width: 960px; height:540px;" align="center" alt="ghibli" src="https://studioghibli.jp/static/media/cat-gif.3cd2ba79.gif">
 <br clear="left"/>
 
-<h3 align="left">Languages and Tools:</h3>
+<h3 align="left">Languages&Tools:</h3>
 
 <!-- <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> 
     <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40" style="margin: 10px;"/>
