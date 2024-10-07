@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Gagah Putra Bangsa</h1>
-<!-- <img style="width: 960px; height:540px;" align="center" alt="ghibli" src="https://studioghibli.jp/static/media/cat-gif.3cd2ba79.gif"> -->
-<div style="width:100%;height:0;padding-bottom:120%;position:relative;"><iframe src="https://giphy.com/embed/aTCa0tTwPzfig" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/studio-ghibli-spirited-away-aTCa0tTwPzfig">via GIPHY</a></p>
-<br clear="left"/>
+<img style="width: 960px; height:540px;" align="center" alt="ghibli" src="https://giphy.com/gifs/studio-ghibli-spirited-away-aTCa0tTwPzfig">
+<!-- <div style="width:100%;height:0;padding-bottom:120%;position:relative;"><iframe src="https://giphy.com/embed/aTCa0tTwPzfig" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/studio-ghibli-spirited-away-aTCa0tTwPzfig">via GIPHY</a></p>
+<br clear="left"/> -->
 
 <h3 align="left">Languages&Tools:</h3>
 
