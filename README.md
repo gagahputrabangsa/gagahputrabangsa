@@ -1,7 +1,8 @@
 <h1 align="center">Hi 👋, I'm Gagah Putra Bangsa!</h1>
 
-<!-- GIF dari Tenor -->
-<img align="center" src="[https://media.tenor.com/2hIKs6J2jOYAAAAC/anime-frieren.gif](https://media1.tenor.com/m/BIqUsb17ZkQAAAAd/anime-frieren.gif)" alt="Anime Frieren GIF" width="500"/>
+<div align="center">
+    <img src="https://media1.tenor.com/m/BIqUsb17ZkQAAAAd/anime-frieren.gif" alt="Anime Frieren GIF" width="500"/>
+</div>
 
 <h3 align="left">Languages & Tools:</h3>
 
