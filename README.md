@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Gagah Putra Bangsa!</h1>
-<img style="width: 960px; height:540px;" align="center" alt="ghibli" src="[https://tenor.com/view/anime-frieren-fern-doubt-question-gif-327237414046885444](https://tenor.com/view/anime-frieren-fern-doubt-question-gif-327237414046885444)">
+<img style="width: 960px; height:540px;" align="center" alt="ghibli" src="[[https://tenor.com/view/anime-frieren-fern-doubt-question-gif-327237414046885444](https://tenor.com/view/anime-frieren-fern-doubt-question-gif-327237414046885444)](https://c.tenor.com/BIqUsb17ZkQAAAAC/tenor.gif)">
 <!-- <iframe src="https://giphy.com/embed/aTCa0tTwPzfig" width="960" height="540" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/studio-ghibli-spirited-away-aTCa0tTwPzfig">via GIPHY</a></p> -->
 <!-- <div style="width:100%;height:0;padding-bottom:120%;position:relative;"><iframe src="https://giphy.com/embed/aTCa0tTwPzfig" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/studio-ghibli-spirited-away-aTCa0tTwPzfig">via GIPHY</a></p>
 <br clear="left"/> -->
