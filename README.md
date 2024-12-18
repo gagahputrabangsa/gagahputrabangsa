@@ -1,9 +1,7 @@
 <h1 align="center">Hi 👋, I'm Gagah Putra Bangsa!</h1>
 
-<img style="width: 960px; height:540px;" align="center" alt="ghibli" src="">
-
 <!-- GIF dari Tenor -->
-<img src="https://media.tenor.com/2hIKs6J2jOYAAAAC/anime-frieren.gif" alt="Anime Frieren GIF" width="500"/>
+<img align="center" src="https://media.tenor.com/2hIKs6J2jOYAAAAC/anime-frieren.gif" alt="Anime Frieren GIF" width="500"/>
 
 <h3 align="left">Languages & Tools:</h3>
 
