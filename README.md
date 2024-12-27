@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Gaga Putra!</h1>
+<h1 align="center">Hi👋, I'm Gaga Putra!</h1>
 
 <div align="center">
     <img src="https://media1.tenor.com/m/BIqUsb17ZkQAAAAd/anime-frieren.gif" alt="Anime Frieren GIF" width="800"/>
