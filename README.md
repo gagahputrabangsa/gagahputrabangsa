@@ -1,6 +1,6 @@
 🚀 Welcome to My Digital Universe
 <div align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00D9FF&center=true&vCenter=true&width=600&lines=Hi+there!+I'm+Gagah+Putra+Bangsa+%F0%9F%91%8B;AI+and+Machine+Learning+Enthusiast;Data%2FSofware+Engineer;Informatics+Engineering+Student" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00D9FF&center=true&vCenter=true&width=600&lines=Hi+there!+I'm+Gaga+Putra+%F0%9F%91%8B;AI+and+Machine+Learning+Enthusiast;Data%2FSofware+Engineer;Informatics+Engineering+Student" alt="Typing SVG" />
 </div>
 
 <div align="center">
