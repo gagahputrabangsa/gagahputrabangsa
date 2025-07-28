@@ -1,9 +1,9 @@
-<h1 align="center">Hi👋!!!, I'm Gaga Putra!</h1>
+
 
 # 🚀 Welcome to My Digital Universe
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00D9FF&center=true&vCenter=true&width=600&lines=Hi+there!+I'm+Achmad+Fauzy+%F0%9F%91%8B;Full+Stack+Developer;AI+Integration+Specialist;Mobile+App+Developer;Data+Analytics+Expert" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00D9FF&center=true&vCenter=true&width=600&lines=Hi+there!+I'm+Gagah+Putra+Bangsa+%F0%9F%91%8B;Full+Stack+Developer;AI+Engineer;Data/Software+Engineer;Data Scientist;Data+Scientist" alt="Typing SVG" />
 </div>
 
 <div align="center">
