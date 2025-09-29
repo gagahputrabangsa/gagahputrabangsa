@@ -11,7 +11,7 @@
 const gagahPutraBangsa = {
     location: "Jakarta, Indonesia 🇮🇩",
     education: "Informatics Engineering @ Trisakti University",
-    gpa: "4.0/4.0 in fourth semester 🏆",
+    gpa: "4.0/4.0 in fourth & seventh semester 🏆",
     passion: [
         "Artificial Intelligence",
         "Machine Learning",
