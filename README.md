@@ -111,36 +111,20 @@ Advanced Data and Information Management Laboratory Assistant (Aug 2024 - Dec 20
 🎯 Professional Highlights
 <div align="center">
 
-🎓 Education
+| 🎓 Education | 🏆 Certifications | 💼 Experience |
+| :--- | :--- | :--- |
+| **Informatics Engineering** | **Neo4j** Certified Professional | **Data/Software Engineer** |
+| Trisakti University | **ACA** Big Data Certified Associate | Ministry of Finance RI |
+| *2021 - 2025 (Expected)* | **Highest CGPA** Award | **Risk Infrastructure** |
+| **GPA: 4.0/4.0** (Sem 4 & 7) | **Head of Curriculum**, GDSC | PT Pertamina (Persero) |
+| Lab Assistant (AI, ML, Algo) | | |
 
-🏆 Achievements & Certifications
+</div>
 
-💼 Experience
+<br />
 
-Informatics Engineering
-
-Highest CGPA Award
-
-Data/Software Engineer
-
-Trisakti University
-
-4.0/4.0 GPA in 4th Semester
-
-Risk Infrastructure
-
-Aug 2021 - Jul 2025 (Expected)
-
-Neo4j Certified Professional
-
-Lab Assistant (AI, ML, Algo)
-
-
-
-ACA Big Data Certified Associate
-
-Head of Curriculum, GDSC
-
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Open%20for%20Collaboration-00D9FF?style=for-the-badge&logo=github" />
 </div>
 
 🌐 Let's Connect & Collaborate
