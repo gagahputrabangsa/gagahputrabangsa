@@ -133,7 +133,7 @@ Mohon maaf, sepertinya saya terlalu bersemangat sampai salah menuliskan tahunnya
 
 Selain itu, saya merapikan beberapa tag yang mungkin menyebabkan *rendering* yang kurang sempurna di GitHub. Berikut adalah versi yang sudah diperbaiki:
 
-```markdown
+
 <div align="center">
   <img src="https://img.shields.io/badge/Status-Open%20for%20Collaboration-00D9FF?style=for-the-badge&logo=github" />
 </div>
