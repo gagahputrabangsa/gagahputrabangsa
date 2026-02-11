@@ -129,26 +129,15 @@ Advanced Data and Information Management Laboratory Assistant (Aug 2024 - Dec 20
 
 <br />
 
-Mohon maaf, sepertinya saya terlalu bersemangat sampai salah menuliskan tahunnya. Karena sekarang sudah Februari **2026**, saya sudah menyesuaikan variabelnya agar tetap relevan.
-
-Selain itu, saya merapikan beberapa tag yang mungkin menyebabkan *rendering* yang kurang sempurna di GitHub. Berikut adalah versi yang sudah diperbaiki:
-
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Status-Open%20for%20Collaboration-00D9FF?style=for-the-badge&logo=github" />
-</div>
-
-<br />
-
 <div align="center">
   <h2>🌐 Let's Connect & Collaborate</h2>
-  <a href="mailto:emailmu@gmail.com">
+  <a href="mailto:gagaputra626@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
   <a href="https://linkedin.com/in/gagahputrabangsa">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://instagram.com/username_mu">
+  <a href="https://instagram.com/gaga_putra.b">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
   <a href="https://github.com/gagahputrabangsa">
