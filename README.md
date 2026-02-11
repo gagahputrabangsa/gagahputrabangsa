@@ -127,26 +127,71 @@ Advanced Data and Information Management Laboratory Assistant (Aug 2024 - Dec 20
   <img src="https://img.shields.io/badge/Status-Open%20for%20Collaboration-00D9FF?style=for-the-badge&logo=github" />
 </div>
 
-🌐 Let's Connect & Collaborate
-<div align="center">
+<br />
 
+Mohon maaf, sepertinya saya terlalu bersemangat sampai salah menuliskan tahunnya. Karena sekarang sudah Februari **2026**, saya sudah menyesuaikan variabelnya agar tetap relevan.
+
+Selain itu, saya merapikan beberapa tag yang mungkin menyebabkan *rendering* yang kurang sempurna di GitHub. Berikut adalah versi yang sudah diperbaiki:
+
+```markdown
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Open%20for%20Collaboration-00D9FF?style=for-the-badge&logo=github" />
 </div>
 
-💡 Current Focus
-const currentGoals2025 = {
-    learning: ["Advanced AI/ML", "LLM-driven RAG chatbots", "Data Integration at Scale"],
-    building: ["Innovative AI solutions", "Efficient Data Pipelines"],
-    contributing: ["Open source projects", "Leading Research & Technology at HMTI"],
+<br />
+
+<div align="center">
+  <h2>🌐 Let's Connect & Collaborate</h2>
+  <a href="mailto:emailmu@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+  </a>
+  <a href="https://linkedin.com/in/gagahputrabangsa">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://instagram.com/username_mu">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+  <a href="https://github.com/gagahputrabangsa">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</div>
+
+<br />
+
+### 💡 Current Focus
+
+```javascript
+const currentGoals2026 = {
+    learning: [
+        "Advanced AI/ML", 
+        "LLM-driven RAG chatbots", 
+        "Data Integration at Scale"
+    ],
+    building: [
+        "Innovative AI solutions", 
+        "Efficient Data Pipelines"
+    ],
+    contributing: [
+        "Open source projects", 
+        "Leading Research & Technology @ HMTI"
+    ],
     goal: "To apply analytical thinking and innovative solutions to challenging technical problems."
 };
+
+```
+
+<br />
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="400">
 
-"Code is like humor. When you have to explain it, it's bad." – Cory House
+<br />
 
-</div>
+> "Code is like humor. When you have to explain it, it's bad." – **Cory House**
 
-<div align="center">
+<br />
+
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Thanks+for+visiting+my+profile!+%F0%9F%9A%80;Let's+build+something+amazing+together!+%F0%9F%92%AB;Always+open+for+collaboration!+%F0%9F%A4%9D" alt="Closing message" />
 </div>
+
+```
