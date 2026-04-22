@@ -89,24 +89,7 @@ Advanced Data and Information Management Laboratory Assistant (Aug 2024 - Dec 20
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="900">
 </div>
 
-📈 GitHub Analytics
-<div align="center">
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=gagahputrabangsa&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gagahputrabangsa&layout=compact&langs_count=8&theme=radical"/>
-</div>
 
-<div align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=gagahputrabangsa&theme=radical" alt="GitHub Streak" />
-</div>
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=gagahputrabangsa&theme=radical&no-frame=false&no-bg=false&margin-w=4" />
-</div>
-
-📊 GitHub Activity Graph
-<div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=gagahputrabangsa&theme=tokyo-night&bg_color=1a1b27&color=00d9ff&line=00d9ff&point=ffffff&area=true&hide_border=true" />
-</div>
 
 🎯 Professional Highlights
 <div align="center">
