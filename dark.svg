@@ -1,0 +1,540 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#030712"/>
+      <stop offset="100%" style="stop-color:#0a0f1e"/>
+    </linearGradient>
+
+    <!-- Accent gradient purple to cyan to emerald -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#22D3EE;#10B981;#7C3AED" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE;#10B981;#7C3AED;#22D3EE" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#10B981">
+        <animate attributeName="stop-color" values="#10B981;#7C3AED;#22D3EE;#10B981" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- ASCII text gradient -->
+    <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE;#7C3AED;#10B981;#22D3EE" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#10B981;#22D3EE;#7C3AED" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Stronger glow -->
+    <filter id="glowStrong" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Glass panel filter -->
+    <filter id="glassFx" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feOffset dy="1" dx="1"/>
+      <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"/>
+      <feColorMatrix type="saturate" values="4"/>
+    </filter>
+
+    <!-- Clip for rounded card -->
+    <clipPath id="cardClip">
+      <rect width="1180" height="610" rx="20" ry="20"/>
+    </clipPath>
+
+    <!-- Left panel clip -->
+    <clipPath id="leftClip">
+      <rect x="0" y="0" width="448" height="610"/>
+    </clipPath>
+
+    <!-- Shimmer gradient -->
+    <linearGradient id="shimmer" x1="-100%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0)"/>
+      <stop offset="50%" style="stop-color:rgba(255,255,255,0.06)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0)"/>
+      <animate attributeName="x1" values="-100%;200%" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;400%" dur="3s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Radial glow bg -->
+    <radialGradient id="bgGlow1" cx="25%" cy="40%" r="40%">
+      <stop offset="0%" style="stop-color:rgba(124,58,237,0.12)"/>
+      <stop offset="100%" style="stop-color:rgba(124,58,237,0)"/>
+    </radialGradient>
+    <radialGradient id="bgGlow2" cx="75%" cy="60%" r="40%">
+      <stop offset="0%" style="stop-color:rgba(34,211,238,0.08)"/>
+      <stop offset="100%" style="stop-color:rgba(34,211,238,0)"/>
+    </radialGradient>
+    <radialGradient id="bgGlow3" cx="50%" cy="20%" r="30%">
+      <stop offset="0%" style="stop-color:rgba(16,185,129,0.07)"/>
+      <stop offset="100%" style="stop-color:rgba(16,185,129,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Main card -->
+  <g clip-path="url(#cardClip)">
+    <!-- Background -->
+    <rect width="1180" height="610" fill="url(#bgGrad)"/>
+
+    <!-- Animated background glows -->
+    <rect width="1180" height="610" fill="url(#bgGlow1)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;30,20;0,0" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="1180" height="610" fill="url(#bgGlow2)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;-20,15;0,0" dur="10s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="1180" height="610" fill="url(#bgGlow3)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;15,-10;0,0" dur="12s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Scanline effect -->
+    <rect width="1180" height="2" fill="rgba(34,211,238,0.04)" y="0">
+      <animate attributeName="y" values="-2;612" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- ==================== LEFT PANEL ==================== -->
+    <!-- Left panel glass bg -->
+    <rect x="12" y="12" width="436" height="586" rx="14" ry="14"
+          fill="rgba(15,23,42,0.7)" stroke="rgba(124,58,237,0.25)" stroke-width="1"/>
+
+    <!-- Left panel shimmer overlay -->
+    <rect x="12" y="12" width="436" height="586" rx="14" ry="14"
+          fill="url(#shimmer)" opacity="0.5"/>
+
+    <!-- ASCII Portrait - Cyber Terminal -->
+    <!-- Terminal header dots -->
+    <circle cx="38" cy="38" r="5" fill="#ff5f57"/>
+    <circle cx="56" cy="38" r="5" fill="#febc2e"/>
+    <circle cx="74" cy="38" r="5" fill="#28c840"/>
+    <text x="100" y="43" fill="#475569" font-size="10" font-family="monospace">terminal — bash</text>
+
+    <!-- Horizontal divider -->
+    <line x1="24" y1="54" x2="436" y2="54" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+
+    <!-- ASCII Art floating animation -->
+    <g filter="url(#glow)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="4s" repeatCount="indefinite" additive="sum"/>
+
+      <!-- ASCII Art Lines revealed sequentially -->
+      <!-- Line 1 -->
+      <text x="28" y="78" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ██████╗  █████╗  ██████╗  █████╗  ██╗  ██╗
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.2s" fill="freeze"/>
+      </text>
+      <!-- Line 2 -->
+      <text x="28" y="89" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ██╔════╝ ██╔══██╗██╔════╝ ██╔══██╗██║  ██║
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.4s" fill="freeze"/>
+      </text>
+      <!-- Line 3 -->
+      <text x="28" y="100" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ██║  ███╗███████║██║  ███╗███████║███████║
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.6s" fill="freeze"/>
+      </text>
+      <!-- Line 4 -->
+      <text x="28" y="111" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ██║   ██║██╔══██║██║   ██║██╔══██║██╔══██║
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.8s" fill="freeze"/>
+      </text>
+      <!-- Line 5 -->
+      <text x="28" y="122" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ╚██████╔╝██║  ██║╚██████╔╝██║  ██║██║  ██║
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.0s" fill="freeze"/>
+      </text>
+      <!-- Line 6 -->
+      <text x="28" y="133" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+         ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.2s" fill="freeze"/>
+      </text>
+
+      <!-- Divider -->
+      <text x="28" y="148" font-family="'Courier New',monospace" font-size="8" fill="rgba(34,211,238,0.4)" opacity="0">
+        ─────────────────────────────────────────────
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.4s" fill="freeze"/>
+      </text>
+
+      <!-- PUTRA ASCII -->
+      <text x="28" y="165" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ██████╗ ██╗   ██╗████████╗██████╗  █████╗
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.5s" fill="freeze"/>
+      </text>
+      <text x="28" y="176" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ██╔══██╗██║   ██║╚══██╔══╝██╔══██╗██╔══██╗
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.6s" fill="freeze"/>
+      </text>
+      <text x="28" y="187" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ██████╔╝██║   ██║   ██║   ██████╔╝███████║
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.7s" fill="freeze"/>
+      </text>
+      <text x="28" y="198" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ██╔═══╝ ██║   ██║   ██║   ██╔══██╗██╔══██║
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.8s" fill="freeze"/>
+      </text>
+      <text x="28" y="209" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ██║     ╚██████╔╝   ██║   ██║  ██║██║  ██║
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.9s" fill="freeze"/>
+      </text>
+      <text x="28" y="220" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ╚═╝      ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.0s" fill="freeze"/>
+      </text>
+
+      <!-- Divider -->
+      <text x="28" y="235" font-family="'Courier New',monospace" font-size="8" fill="rgba(34,211,238,0.4)" opacity="0">
+        ─────────────────────────────────────────────
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.1s" fill="freeze"/>
+      </text>
+
+      <!-- BANGSA ASCII -->
+      <text x="28" y="252" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ██████╗  █████╗ ███╗  ██╗ ██████╗ ███████╗█████╗
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.2s" fill="freeze"/>
+      </text>
+      <text x="28" y="263" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ██╔══██╗██╔══██╗████╗ ██║██╔════╝ ██╔════╝██╔══██╗
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.3s" fill="freeze"/>
+      </text>
+      <text x="28" y="274" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ██████╔╝███████║██╔██╗██║██║  ███╗███████╗███████║
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.4s" fill="freeze"/>
+      </text>
+      <text x="28" y="285" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ██╔══██╗██╔══██║██║╚████║██║   ██║╚════██║██╔══██║
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.5s" fill="freeze"/>
+      </text>
+      <text x="28" y="296" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ██████╔╝██║  ██║██║ ╚███║╚██████╔╝███████║██║  ██║
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.6s" fill="freeze"/>
+      </text>
+      <text x="28" y="307" font-family="'Courier New',monospace" font-size="8.5" fill="url(#asciiGrad)" opacity="0">
+        ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚══╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
+        <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.7s" fill="freeze"/>
+      </text>
+    </g>
+
+    <!-- Typing cursor blink below ASCII -->
+    <rect x="28" y="316" width="8" height="14" fill="#22D3EE" rx="1">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Stats/Badges section -->
+    <text x="28" y="350" font-family="'Courier New',monospace" font-size="9" fill="#475569" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3s" fill="freeze"/>
+      $ whoami
+    </text>
+    <text x="28" y="364" font-family="'Courier New',monospace" font-size="9" fill="#94A3B8" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.2s" fill="freeze"/>
+      AI Solution Architect &amp; Data Engineer
+    </text>
+
+    <text x="28" y="382" font-family="'Courier New',monospace" font-size="9" fill="#475569" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.4s" fill="freeze"/>
+      $ cat location.txt
+    </text>
+    <text x="28" y="396" font-family="'Courier New',monospace" font-size="9" fill="#94A3B8" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.6s" fill="freeze"/>
+      📍 Jakarta, Indonesia
+    </text>
+
+    <text x="28" y="414" font-family="'Courier New',monospace" font-size="9" fill="#475569" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.8s" fill="freeze"/>
+      $ cat education.txt
+    </text>
+    <text x="28" y="428" font-family="'Courier New',monospace" font-size="9" fill="#94A3B8" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.0s" fill="freeze"/>
+      🎓 Trisakti University — Informatics, 4.0 GPA
+    </text>
+
+    <!-- Social links at bottom left -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.5s" fill="freeze"/>
+      <!-- GitHub icon pill -->
+      <rect x="28" y="530" width="90" height="26" rx="13" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+      <text x="53" y="547" font-family="'Courier New',monospace" font-size="10" fill="#7C3AED">GitHub</text>
+      <text x="32" y="547" font-family="monospace" font-size="12" fill="#7C3AED">⌥</text>
+
+      <!-- LinkedIn icon pill -->
+      <rect x="126" y="530" width="90" height="26" rx="13" fill="rgba(34,211,238,0.10)" stroke="rgba(34,211,238,0.3)" stroke-width="1"/>
+      <text x="148" y="547" font-family="'Courier New',monospace" font-size="10" fill="#22D3EE">LinkedIn</text>
+      <text x="132" y="547" font-family="monospace" font-size="12" fill="#22D3EE">⌘</text>
+
+      <!-- Portfolio icon pill -->
+      <rect x="224" y="530" width="90" height="26" rx="13" fill="rgba(16,185,129,0.10)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+      <text x="246" y="547" font-family="'Courier New',monospace" font-size="10" fill="#10B981">Portfolio</text>
+      <text x="230" y="547" font-family="monospace" font-size="12" fill="#10B981">⊕</text>
+    </g>
+
+    <!-- Left panel bottom glow line -->
+    <line x1="28" y1="520" x2="436" y2="520" stroke="url(#accentGrad)" stroke-width="1" opacity="0.3"/>
+
+    <!-- ==================== RIGHT PANEL ==================== -->
+    <!-- Right panel glass bg -->
+    <rect x="460" y="12" width="708" height="586" rx="14" ry="14"
+          fill="rgba(15,23,42,0.7)" stroke="rgba(34,211,238,0.2)" stroke-width="1"/>
+
+    <!-- Right panel shimmer -->
+    <rect x="460" y="12" width="708" height="586" rx="14" ry="14"
+          fill="url(#shimmer)" opacity="0.3"/>
+
+    <!-- Terminal header -->
+    <circle cx="486" cy="38" r="5" fill="#ff5f57"/>
+    <circle cx="504" cy="38" r="5" fill="#febc2e"/>
+    <circle cx="522" cy="38" r="5" fill="#28c840"/>
+    <text x="548" y="43" fill="#475569" font-size="10" font-family="monospace">gagah@portfolio — ~/profile</text>
+
+    <!-- Terminal divider -->
+    <line x1="472" y1="54" x2="1156" y2="54" stroke="rgba(34,211,238,0.2)" stroke-width="1"/>
+
+    <!-- Greeting -->
+    <text x="480" y="90" font-family="'Courier New',monospace" font-size="13" fill="#94A3B8" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.5s" fill="freeze"/>
+      $
+    </text>
+
+    <!-- Hi greeting with wave -->
+    <text x="498" y="90" font-family="'Courier New',monospace" font-size="13" fill="#F8FAFC" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.7s" fill="freeze"/>
+      Hi there! 👋  I'm
+    </text>
+
+    <!-- Name in gradient -->
+    <text x="498" y="115" font-family="'Courier New',monospace" font-size="24" font-weight="bold" fill="url(#accentGrad)" filter="url(#glow)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.0s" fill="freeze"/>
+      Gagah Putra Bangsa
+    </text>
+
+    <!-- Animated typing text -->
+    <text x="498" y="148" font-family="'Courier New',monospace" font-size="14" fill="#22D3EE" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.5s" fill="freeze"/>
+      <animate attributeName="display" values="inline;none;none;none;none;inline" dur="10s" begin="2s" repeatCount="indefinite"/>
+      AI Solution Architect
+    </text>
+    <text x="498" y="148" font-family="'Courier New',monospace" font-size="14" fill="#22D3EE" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.5s" fill="freeze"/>
+      <animate attributeName="display" values="none;inline;none;none;none;none" dur="10s" begin="2s" repeatCount="indefinite"/>
+      Data Engineer
+    </text>
+    <text x="498" y="148" font-family="'Courier New',monospace" font-size="14" fill="#22D3EE" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.5s" fill="freeze"/>
+      <animate attributeName="display" values="none;none;inline;none;none;none" dur="10s" begin="2s" repeatCount="indefinite"/>
+      Lead AI Specialist
+    </text>
+    <text x="498" y="148" font-family="'Courier New',monospace" font-size="14" fill="#22D3EE" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.5s" fill="freeze"/>
+      <animate attributeName="display" values="none;none;none;inline;none;none" dur="10s" begin="2s" repeatCount="indefinite"/>
+      LLM &amp; RAG Engineer
+    </text>
+    <text x="498" y="148" font-family="'Courier New',monospace" font-size="14" fill="#22D3EE" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.5s" fill="freeze"/>
+      <animate attributeName="display" values="none;none;none;none;inline;none" dur="10s" begin="2s" repeatCount="indefinite"/>
+      Open Source Enthusiast
+    </text>
+
+    <!-- Typing cursor after role text -->
+    <rect x="710" y="135" width="8" height="16" fill="#22D3EE" rx="1" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="1s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Divider line -->
+    <line x1="480" y1="165" x2="900" y2="165" stroke="url(#accentGrad)" stroke-width="1" opacity="0.3">
+      <animate attributeName="opacity" values="0;0.3" dur="0.5s" begin="2s" fill="freeze"/>
+    </line>
+
+    <!-- Info section - sequential reveal -->
+    <!-- Location -->
+    <text x="480" y="195" font-family="'Courier New',monospace" font-size="11" fill="#475569" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.0s" fill="freeze"/>
+      📍 Location
+    </text>
+    <text x="620" y="195" font-family="'Courier New',monospace" font-size="11" fill="#F8FAFC" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.2s" fill="freeze"/>
+      Jakarta, Indonesia
+    </text>
+
+    <!-- Education -->
+    <text x="480" y="218" font-family="'Courier New',monospace" font-size="11" fill="#475569" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.4s" fill="freeze"/>
+      🎓 Education
+    </text>
+    <text x="620" y="218" font-family="'Courier New',monospace" font-size="11" fill="#F8FAFC" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.6s" fill="freeze"/>
+      Trisakti University — Informatics (4.0 GPA)
+    </text>
+
+    <!-- Current Focus -->
+    <text x="480" y="241" font-family="'Courier New',monospace" font-size="11" fill="#475569" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.8s" fill="freeze"/>
+      🚀 Focus
+    </text>
+    <text x="620" y="241" font-family="'Courier New',monospace" font-size="11" fill="#F8FAFC" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.0s" fill="freeze"/>
+      LLM Chatbots · Data Pipelines · AI Solutions
+    </text>
+
+    <!-- Portfolio -->
+    <text x="480" y="264" font-family="'Courier New',monospace" font-size="11" fill="#475569" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.2s" fill="freeze"/>
+      🌐 Portfolio
+    </text>
+    <text x="620" y="264" font-family="'Courier New',monospace" font-size="11" fill="#22D3EE" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.4s" fill="freeze"/>
+      gagaputra-portfolio.vercel.app
+    </text>
+
+    <!-- Email -->
+    <text x="480" y="287" font-family="'Courier New',monospace" font-size="11" fill="#475569" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.6s" fill="freeze"/>
+      ✉  Email
+    </text>
+    <text x="620" y="287" font-family="'Courier New',monospace" font-size="11" fill="#F8FAFC" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.8s" fill="freeze"/>
+      gagaputra626@gmail.com
+    </text>
+
+    <!-- Divider -->
+    <line x1="480" y1="305" x2="1150" y2="305" stroke="rgba(255,255,255,0.06)" stroke-width="1" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.0s" fill="freeze"/>
+    </line>
+
+    <!-- Skills section header -->
+    <text x="480" y="330" font-family="'Courier New',monospace" font-size="11" fill="#475569" font-weight="bold" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="4.0s" fill="freeze"/>
+      $ skills --list
+    </text>
+
+    <!-- Skill pills row 1 -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.2s" fill="freeze"/>
+      <!-- Python -->
+      <rect x="480" y="344" width="70" height="24" rx="12" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.5)" stroke-width="1"/>
+      <text x="515" y="360" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#7C3AED">Python</text>
+      <!-- SQL -->
+      <rect x="558" y="344" width="52" height="24" rx="12" fill="rgba(34,211,238,0.12)" stroke="rgba(34,211,238,0.4)" stroke-width="1"/>
+      <text x="584" y="360" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#22D3EE">SQL</text>
+      <!-- LangChain -->
+      <rect x="618" y="344" width="90" height="24" rx="12" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+      <text x="663" y="360" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#10B981">LangChain</text>
+      <!-- Power BI -->
+      <rect x="716" y="344" width="78" height="24" rx="12" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+      <text x="755" y="360" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#7C3AED">Power BI</text>
+      <!-- PostgreSQL -->
+      <rect x="802" y="344" width="94" height="24" rx="12" fill="rgba(34,211,238,0.12)" stroke="rgba(34,211,238,0.4)" stroke-width="1"/>
+      <text x="849" y="360" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#22D3EE">PostgreSQL</text>
+      <!-- Docker -->
+      <rect x="904" y="344" width="68" height="24" rx="12" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+      <text x="938" y="360" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#10B981">Docker</text>
+    </g>
+
+    <!-- Skill pills row 2 -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.5s" fill="freeze"/>
+      <!-- Neo4j -->
+      <rect x="480" y="376" width="64" height="24" rx="12" fill="rgba(34,211,238,0.12)" stroke="rgba(34,211,238,0.4)" stroke-width="1"/>
+      <text x="512" y="392" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#22D3EE">Neo4j</text>
+      <!-- Kafka -->
+      <rect x="552" y="376" width="60" height="24" rx="12" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+      <text x="582" y="392" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#7C3AED">Kafka</text>
+      <!-- FastAPI -->
+      <rect x="620" y="376" width="68" height="24" rx="12" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+      <text x="654" y="392" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#10B981">FastAPI</text>
+      <!-- Django -->
+      <rect x="696" y="376" width="66" height="24" rx="12" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+      <text x="729" y="392" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#7C3AED">Django</text>
+      <!-- Figma -->
+      <rect x="770" y="376" width="60" height="24" rx="12" fill="rgba(34,211,238,0.12)" stroke="rgba(34,211,238,0.4)" stroke-width="1"/>
+      <text x="800" y="392" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#22D3EE">Figma</text>
+      <!-- Cassandra -->
+      <rect x="838" y="376" width="84" height="24" rx="12" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+      <text x="880" y="392" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#10B981">Cassandra</text>
+      <!-- Git -->
+      <rect x="930" y="376" width="46" height="24" rx="12" fill="rgba(124,58,237,0.15)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+      <text x="953" y="392" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#7C3AED">Git</text>
+    </g>
+
+    <!-- Experience highlights -->
+    <line x1="480" y1="414" x2="1150" y2="414" stroke="rgba(255,255,255,0.06)" stroke-width="1" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.8s" fill="freeze"/>
+    </line>
+
+    <text x="480" y="438" font-family="'Courier New',monospace" font-size="11" fill="#475569" font-weight="bold" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="4.8s" fill="freeze"/>
+      $ cat highlights.log
+    </text>
+
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.0s" fill="freeze"/>
+      <text x="480" y="460" font-family="'Courier New',monospace" font-size="10" fill="#94A3B8">▸ Built LLM chatbot at PT Pertamina — boosting task efficiency by 20–30%</text>
+      <text x="480" y="478" font-family="'Courier New',monospace" font-size="10" fill="#94A3B8">▸ Data/Software Engineer at Ministry of Finance — 98% accuracy in legal parsing</text>
+      <text x="480" y="496" font-family="'Courier New',monospace" font-size="10" fill="#94A3B8">▸ Lead AI Specialist @ Nebula Data — presales &amp; production-ready AI solutions</text>
+      <text x="480" y="514" font-family="'Courier New',monospace" font-size="10" fill="#94A3B8">▸ ACA Big Data Certified · Neo4j Certified · IBM SQL &amp; Python Certified</text>
+    </g>
+
+    <!-- Bottom prompt line -->
+    <text x="480" y="558" font-family="'Courier New',monospace" font-size="11" fill="#475569" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="5.5s" fill="freeze"/>
+      gagah@portfolio:~$
+    </text>
+    <rect x="652" y="545" width="8" height="14" fill="#10B981" rx="1" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="5.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="1s" begin="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- ==================== PARTICLES ==================== -->
+    <!-- Floating particles -->
+    <circle cx="100" cy="500" r="1.5" fill="rgba(124,58,237,0.6)">
+      <animateMotion path="M0,0 Q30,-40 0,-80 Q-30,-40 0,0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="450" r="1" fill="rgba(34,211,238,0.5)">
+      <animateMotion path="M0,0 Q-20,-30 0,-60 Q20,-30 0,0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="480" r="1.5" fill="rgba(16,185,129,0.5)">
+      <animateMotion path="M0,0 Q25,-35 0,-70 Q-25,-35 0,0" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="560" r="1" fill="rgba(124,58,237,0.4)">
+      <animateMotion path="M0,0 Q-15,-25 0,-50 Q15,-25 0,0" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="950" cy="520" r="1.5" fill="rgba(34,211,238,0.4)">
+      <animateMotion path="M0,0 Q20,-30 0,-60 Q-20,-30 0,0" dur="7s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <circle cx="1100" cy="480" r="1" fill="rgba(16,185,129,0.5)">
+      <animateMotion path="M0,0 Q-10,-20 0,-40 Q10,-20 0,0" dur="5s" repeatCount="indefinite" begin="2s"/>
+    </circle>
+
+    <!-- ==================== BORDER SHIMMER ==================== -->
+    <!-- Outer border with shimmer -->
+    <rect x="1" y="1" width="1178" height="608" rx="20" ry="20"
+          fill="none" stroke="url(#accentGrad)" stroke-width="1.5" opacity="0.4"/>
+
+    <!-- Corner accents -->
+    <line x1="0" y1="30" x2="0" y2="0" stroke="#7C3AED" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="0" x2="30" y2="0" stroke="#7C3AED" stroke-width="2" opacity="0.6"/>
+    <line x1="1150" y1="0" x2="1180" y2="0" stroke="#22D3EE" stroke-width="2" opacity="0.6"/>
+    <line x1="1180" y1="0" x2="1180" y2="30" stroke="#22D3EE" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="580" x2="0" y2="610" stroke="#10B981" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="610" x2="30" y2="610" stroke="#10B981" stroke-width="2" opacity="0.6"/>
+    <line x1="1150" y1="610" x2="1180" y2="610" stroke="#7C3AED" stroke-width="2" opacity="0.6"/>
+    <line x1="1180" y1="580" x2="1180" y2="610" stroke="#7C3AED" stroke-width="2" opacity="0.6"/>
+
+    <!-- Center divider between panels -->
+    <line x1="448" y1="24" x2="448" y2="586" stroke="url(#accentGrad)" stroke-width="1" opacity="0.2"/>
+  </g>
+</svg>
